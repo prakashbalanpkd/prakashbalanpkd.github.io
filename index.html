@@ -1,18 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home Page</title>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website title shown in browser tab -->
+    <title>My Personal Website</title>
+
     <style>
+        /* Entire page */
         body {
-            
-           
-            background-color: black;
-             color: blue;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #1f1f1f;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: cyan;
+        }
+
+        /* Hero section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .hero p {
+            font-size: 22px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: cyan;
+            color: black;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Content sections */
+        section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h2 {
+            color: cyan;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
+
 <body>
-    <h1 style="font-size:30px;">Hello, I'm Prakash Balan</h1>
-    <p style="font-size:40px;">This Website is under Construction.</p>
+
+    <!-- Navigation bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home section -->
+    <div class="hero" id="home">
+        <h1>Welcome to My Website</h1>
+        <p>This website is hosted using GitHub Pages.</p>
+        <a href="#about" class="button">Learn More</a>
+    </div>
+
+    <!-- About section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Write information about yourself here.
+            You can add your hobbies, skills, projects,
+            or anything you want visitors to know.
+        </p>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: yourname@example.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Website</p>
+    </footer>
+
 </body>
 </html>
