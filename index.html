@@ -130,11 +130,10 @@
         <img src="linkedin posts.png" alt="Website">
     </a>
     
-   <!-- Icon -->
-	<img src="tamil poems.png" width="150" style="cursor:pointer;"
-     	onclick="showImages()">
+	<a href="#" onclick="showImages(); return false;">
+	    <img src="tamil poems.png" width="150">
+	</a>
 
-<!-- Images hidden initially -->
 	<div id="gallery" style="display:none;">
     	<img src="vaimai and poimai.jpg" width="300"><br><br>
     	<img src="buddhan.png" width="300"><br><br>
@@ -143,9 +142,10 @@
 
 	<script>
 	function showImages() {
-	document.getElementById("gallery").style.display = "block";
+    	document.getElementById("gallery").style.display = "block";
 	}
 	</script>
+  
      
 
     </div>
