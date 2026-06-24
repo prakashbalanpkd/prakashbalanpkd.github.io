@@ -130,19 +130,15 @@
         <img src="linkedin posts.png" alt="Website">
     </a>
     
-	<a href="#" onclick="showImages(); return false;">
-	    <img src="tamil poems.png" width="150">
+	<a href="#" onclick="openImages(); return false;">
+    	<img src="tamil poems.png" width="150">
 	</a>
 
-	<div id="gallery" style="display:none;">
-    	<img src="vaimai and poimai.jpg" width="300"><br><br>
-    	<img src="buddhan.png" width="300"><br><br>
-    	<img src="nodi.png" width="300">
-	</div>
-
 	<script>
-	function showImages() {
-    	document.getElementById("gallery").style.display = "block";
+	function openImages() {
+   		window.open("vaimai and poimai.jpg", "_blank");
+    	window.open("buddhan.png", "_blank");
+    	window.open("nodi.png", "_blank");
 	}
 	</script>
   
