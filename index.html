@@ -29,6 +29,25 @@
           height: auto;
           border-radius: 50%;
         }
+		.left-icons {
+    	  position: fixed;
+          left: 20px;
+          top: 200px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+       .left-icons img {
+         width: 50px;
+         height: 50px;
+         border-radius: 10px;
+         cursor: pointer;
+       }
+
+      .left-icons img:hover {
+        transform: scale(1.1);
+       }
         body {
             margin: 0;
             font-family: "Times New Roman",Times,serif;
@@ -101,6 +120,22 @@
 
 <body>
     <img src="myphoto.jpg" class="top-left-image" alt="My Photo">	
+	<div class="left-icons">
+    
+    <a href="https://www.researchgate.net/profile/Balakrishnanbalan-Prakash" target="_blank">
+        <img src="research posts.png" alt="Website">
+    </a>
+   
+    <a href="https://www.linkedin.com/in/dr-prakash-b-9160" target="_blank">
+        <img src="linkedin posts.png" alt="Website">
+    </a>
+    
+    <a href="nodi.png" target="_blank">
+        <img src="tamil poems.png" alt="Poems">
+    </a>
+     
+
+    </div>
     <!-- Navigation bar -->
     <nav>
         <a href="#home">Home</a>
