@@ -130,9 +130,22 @@
         <img src="linkedin posts.png" alt="Website">
     </a>
     
-    <a href="nodi.png" target="_blank">
-        <img src="tamil poems.png" alt="Poems">
-    </a>
+   <!-- Icon -->
+	<img src="tamil poems.png" width="150" style="cursor:pointer;"
+     	onclick="showImages()">
+
+<!-- Images hidden initially -->
+	<div id="gallery" style="display:none;">
+    	<img src="vaimai and poimai.jpg" width="300"><br><br>
+    	<img src="buddhan.png" width="300"><br><br>
+    	<img src="nodi.png" width="300">
+	</div>
+
+	<script>
+	function showImages() {
+	document.getElementById("gallery").style.display = "block";
+	}
+	</script>
      
 
     </div>
