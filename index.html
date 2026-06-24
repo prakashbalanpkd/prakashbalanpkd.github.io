@@ -130,9 +130,46 @@
         <img src="linkedin posts.png" alt="Website">
     </a>
     
-	<a href="nodi.png" target="_blank">
-        <img src="tamil poems.png" alt="Poems">
-    </a>
+	<a href="#" onclick="openGallery(); return false;">
+    	<img src="tamil poems.png" class="icon">
+	</a>
+
+<div id="gallery"
+     style="display:none;
+            position:fixed;
+            top:10%;
+            left:10%;
+            width:80%;
+            height:80%;
+            overflow-y:auto;
+            background:white;
+            border:1px solid black;
+            padding:10px;">
+
+    <img src="vaimai and poimai.jpg" width="100%" onclick="showImage(this.src)">
+    <img src="buddhan.png" width="100%" onclick="showImage(this.src)">
+    <img src="nodi.png" width="100%" onclick="showImage(this.src)">
+
+    <button onclick="closeGallery()">Close</button>
+</div>
+
+<hr>
+
+<img id="viewer" width="100%">
+
+<script>
+function openGallery() {
+    document.getElementById("gallery").style.display = "block";
+}
+
+function closeGallery() {
+    document.getElementById("gallery").style.display = "none";
+}
+
+function showImage(src) {
+    document.getElementById("viewer").src = src;
+}
+</script>
      
     </div>
     <!-- Navigation bar -->
