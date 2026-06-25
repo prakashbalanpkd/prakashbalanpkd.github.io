@@ -204,6 +204,62 @@ function showImage(src) {
         <h2>Contact</h2>
         <p>Email: balakrishnanprakash@gmail.com</p>
     </section>
+	<div class="highlights-bar">
+    <div class="label">LATEST:</div>
+    <div class="ticker">
+        <span>
+           Convolutional Neural Networks and its predictive behaviour with the nature of the split and loss of
+           avian acoustic samples DOI: 10.13140/RG.2.2.36333.76005
+        </span>
+    </div>
+</div>
+
+<style>
+.highlights-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.label {
+    background: crimson;
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.ticker {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ticker span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 15s linear infinite;
+}
+
+@keyframes ticker {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+</style>
+
 
     <!-- Footer -->
     <footer>
